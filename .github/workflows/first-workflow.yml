@@ -1,0 +1,11 @@
+name: demo github action
+on: push
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+     - name: checkout branch
+       uses: actions/checkout@v4
+     
+     - name: print a mess
+       runs: echo "hello how are u"
