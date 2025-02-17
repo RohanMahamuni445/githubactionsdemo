@@ -8,4 +8,4 @@ jobs:
        uses: actions/checkout@v4
      
      - name: print a mess
-       runs: echo "hello how are u"
+       run: echo "hello how are u"
