@@ -1,0 +1,18 @@
+name: demo second workflow file
+on: push
+
+jobs:
+  build:
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout branch
+      uses: actions/checkout@v4
+
+    - name: printing date
+      run: date
+
+    - name: listing the dir and files
+      run: ls -la
+    
+    - name: system uptime checking
+      run: uptime
